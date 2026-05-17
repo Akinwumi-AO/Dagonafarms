@@ -6,6 +6,7 @@ import Services from "./pages/Services";
 import Products from "./pages/Products";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import OGImage from "./components/OGImage";
 
 export const router = createBrowserRouter([
   {
@@ -19,5 +20,9 @@ export const router = createBrowserRouter([
       { path: "contact", Component: Contact },
       { path: "*", Component: NotFound },
     ],
+  },
+  {
+    path: "/og-image",
+    Component: OGImage,
   },
 ]);

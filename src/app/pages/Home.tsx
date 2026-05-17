@@ -141,7 +141,7 @@ export default function Home() {
                   </Button>
                 </Link>
                 <Link to="/contact">
-                  <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-green-900">
+                  <Button size="lg" className="bg-white text-green-900 hover:bg-green-50 border-2 border-white">
                     Contact Us
                   </Button>
                 </Link>

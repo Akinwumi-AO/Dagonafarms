@@ -95,7 +95,7 @@ export default function Services() {
       description: "Farmers see dramatic improvements in productivity",
     },
     {
-      stat: "500+",
+      stat: "10,000",
       label: "Farmers Trained",
       description: "Building agricultural capacity across communities",
     },

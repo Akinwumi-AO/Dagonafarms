@@ -85,31 +85,31 @@ export default function Footer() {
             <h3 className="text-xl mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/" className="text-green-200 hover:text-amber-400 transition-colors text-sm flex items-center gap-2 group">
+                <Link to="/" onClick={() => window.scrollTo(0, 0)} className="text-green-200 hover:text-amber-400 transition-colors text-sm flex items-center gap-2 group">
                   <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="text-green-200 hover:text-amber-400 transition-colors text-sm flex items-center gap-2 group">
+                <Link to="/about" onClick={() => window.scrollTo(0, 0)} className="text-green-200 hover:text-amber-400 transition-colors text-sm flex items-center gap-2 group">
                   <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
                   About Us
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="text-green-200 hover:text-amber-400 transition-colors text-sm flex items-center gap-2 group">
+                <Link to="/services" onClick={() => window.scrollTo(0, 0)} className="text-green-200 hover:text-amber-400 transition-colors text-sm flex items-center gap-2 group">
                   <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
                   Services
                 </Link>
               </li>
               <li>
-                <Link to="/products" className="text-green-200 hover:text-amber-400 transition-colors text-sm flex items-center gap-2 group">
+                <Link to="/products" onClick={() => window.scrollTo(0, 0)} className="text-green-200 hover:text-amber-400 transition-colors text-sm flex items-center gap-2 group">
                   <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
                   Products
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="text-green-200 hover:text-amber-400 transition-colors text-sm flex items-center gap-2 group">
+                <Link to="/contact" onClick={() => window.scrollTo(0, 0)} className="text-green-200 hover:text-amber-400 transition-colors text-sm flex items-center gap-2 group">
                   <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
                   Contact
                 </Link>

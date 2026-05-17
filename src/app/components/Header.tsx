@@ -44,10 +44,10 @@ export default function Header() {
         {/* Main Header */}
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3">
-            <img 
-              src={logoDark} 
-              alt="Dagona Farms Logo" 
+          <Link to="/" onClick={() => window.scrollTo(0, 0)} className="flex items-center gap-3">
+            <img
+              src={logoDark}
+              alt="Dagona Farms Logo"
               className="h-16 w-16 object-contain"
             />
             <div className="flex flex-col">
@@ -62,6 +62,7 @@ export default function Header() {
               <Link
                 key={link.path}
                 to={link.path}
+                onClick={() => window.scrollTo(0, 0)}
                 className={`px-4 py-2 rounded-lg transition-all ${
                   isActive(link.path)
                     ? "bg-green-700 text-white shadow-md"
@@ -95,7 +96,10 @@ export default function Header() {
                     ? "bg-green-700 text-white"
                     : "text-gray-700 hover:bg-green-50"
                 }`}
-                onClick={() => setIsMobileMenuOpen(false)}
+                onClick={() => {
+                  setIsMobileMenuOpen(false);
+                  window.scrollTo(0, 0);
+                }}
               >
                 {link.label}
               </Link>

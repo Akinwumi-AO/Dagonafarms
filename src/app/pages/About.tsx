@@ -1,5 +1,6 @@
 import { Users, Target, HeartHandshake, Lightbulb, Sprout, HandshakeIcon } from "lucide-react";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
+import heroImage from "../../imports/image-5.png";
 
 export default function About() {
   const values = [
@@ -39,7 +40,14 @@ export default function About() {
     <div className="overflow-x-hidden">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-green-900 to-green-800 text-white py-24">
-        <div className="container mx-auto px-4">
+        <div className="absolute inset-0 opacity-20">
+          <ImageWithFallback
+            src={heroImage}
+            alt="About Dagona Farms"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl">
             <h1 className="text-5xl md:text-6xl mb-6">About Dagona Farms</h1>
             <p className="text-xl md:text-2xl text-green-100 leading-relaxed">
@@ -72,8 +80,8 @@ export default function About() {
             </div>
             <div className="relative">
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1765260905999-06612390fb07?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZnJpY2FuJTIwZmFybSUyMGZpZWxkJTIwY3JvcHN8ZW58MXx8fHwxNzc1MzIyMzA5fDA&ixlib=rb-4.1.0&q=80&w=1080"
-                alt="African farm field"
+                src="https://images.unsplash.com/photo-1708796705570-33fd29ef67d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwyfHxncmVlbmhvdXNlJTIwYWdyaWN1bHR1cmUlMjBtb2Rlcm4lMjBmYXJtaW5nJTIwdGVjaG5vbG9neSUyMGh5ZHJvcG9uaWNzfGVufDF8fHx8MTc3OTAyMjMzM3ww&ixlib=rb-4.1.0&q=80&w=1080"
+                alt="Modern greenhouse agriculture facility"
                 className="rounded-2xl shadow-2xl w-full"
               />
             </div>

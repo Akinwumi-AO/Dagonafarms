@@ -2,25 +2,32 @@ import { Link } from "react-router";
 import { ArrowRight, Sprout, Users, TrendingUp, Award, CheckCircle, PhoneCall, Leaf, Wheat, Fish, Beef } from "lucide-react";
 import { Button } from "../components/ui/button";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
+import heroImage from "../../imports/image-5.png";
+import livestockImage from "../../imports/image-6.png";
+import cropProductionImage from "../../imports/image-7.png";
+import aquacultureImage from "../../imports/image-8.png";
+import aboutImage from "../../imports/image-9.png";
+import maizeProductImage from "../../imports/image-10.png";
+import vegetablesProductImage from "../../imports/image-11.png";
 
 export default function Home() {
   const farmingTypes = [
     {
       title: "Crop Production",
       description: "Rice, Maize, Vegetables & Legumes",
-      image: "https://images.unsplash.com/photo-1651981350249-6173caeeb660?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyaWNlJTIwZmFybWluZyUyMHBhZGR5JTIwZmllbGR8ZW58MXx8fHwxNzc1MzIzMDk2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      image: cropProductionImage,
       icon: Wheat,
     },
     {
       title: "Livestock Farming",
       description: "Cattle, Poultry & Animal Products",
-      image: "https://images.unsplash.com/photo-1645749402055-8e9d6b70e952?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsaXZlc3RvY2slMjBjYXR0bGUlMjBmYXJtaW5nfGVufDF8fHx8MTc3NTIyMzUzMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      image: livestockImage,
       icon: Beef,
     },
     {
       title: "Aquaculture",
       description: "Fish Farming & Aquatic Products",
-      image: "https://images.unsplash.com/photo-1645692396914-4ca9df38cce3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmaXNoJTIwZmFybWluZyUyMGFxdWFjdWx0dXJlJTIwcG9uZHxlbnwxfHx8fDE3NzUzMjMwOTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      image: aquacultureImage,
       icon: Fish,
     },
   ];
@@ -49,10 +56,10 @@ export default function Home() {
   ];
 
   const stats = [
-    { value: "500+", label: "Hectares Farmland", color: "from-green-600 to-green-700" },
-    { value: "1000+", label: "Farmers Trained", color: "from-amber-600 to-amber-700" },
+    { value: "10,000", label: "Hectares Farmland", color: "from-green-600 to-green-700" },
+    { value: "10,000", label: "Farmers Trained", color: "from-amber-600 to-amber-700" },
     { value: "50+", label: "Products", color: "from-green-700 to-green-800" },
-    { value: "10+", label: "Communities", color: "from-yellow-600 to-yellow-700" },
+    { value: "1,000", label: "Communities", color: "from-yellow-600 to-yellow-700" },
   ];
 
   const services = [
@@ -80,22 +87,22 @@ export default function Home() {
 
   const testimonials = [
     {
-      name: "Abubakar Mohammed",
-      role: "Rice Farmer",
-      text: "Dagona Farms transformed my farming practices. With their training and support, my yield has doubled!",
-      image: "https://images.unsplash.com/photo-1741940365182-bc0ffdc1262d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZnJpY2FuJTIwZmFybWVyJTIwcG9ydHJhaXQlMjBzbWlsaW5nfGVufDF8fHx8MTc3NTMyMzA5N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      name: "Ngozi Okafor",
+      role: "Vegetable Farmer - Anambra",
+      text: "Dagona Farms transformed my farming practices. With their training and support, my yield has doubled and my farm is thriving!",
+      image: "https://images.unsplash.com/photo-1729962021385-659b53192b9e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxBZnJpY2FuJTIwd29tYW4lMjBwcm9mZXNzaW9uYWwlMjBmYXJtZXIlMjBzbWlsaW5nJTIwY29uZmlkZW50JTIwcG9ydHJhaXR8ZW58MXx8fHwxNzc5MDIyMzk1fDA&ixlib=rb-4.1.0&q=80&w=1080",
     },
     {
-      name: "Fatima Usman",
-      role: "Vegetable Farmer",
-      text: "The market linkages provided by Dagona Farms have been a game changer for my business. I now have steady buyers.",
-      image: "https://images.unsplash.com/photo-1622123651884-e3d30eebfbff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZ3JpY3VsdHVyYWwlMjB3b3JrZXJzJTIwdGVhbSUyMGZpZWxkfGVufDF8fHx8MTc3NTMyMzA5OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      name: "Adebayo Ogunleye",
+      role: "Maize Farmer - Oyo",
+      text: "The market linkages provided by Dagona Farms have been a game changer for my business. I now have steady buyers and better prices.",
+      image: "https://images.unsplash.com/photo-1704270269033-9600fcc6d0d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxBZnJpY2FuJTIwbWFuJTIwZmFybWVyJTIwcHJvZmVzc2lvbmFsJTIwY29uZmlkZW50JTIwYWdyaWN1bHR1cmUlMjBwb3J0cmFpdHxlbnwxfHx8fDE3NzkwMjI0MDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
     },
     {
-      name: "Ibrahim Suleiman",
-      role: "Livestock Farmer",
-      text: "Their expertise in livestock management helped me reduce losses and increase profitability significantly.",
-      image: "https://images.unsplash.com/photo-1651838677683-f642527059c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmYXJtZXIlMjBoYW5kcyUyMHNvaWwlMjBwbGFudHN8ZW58MXx8fHwxNzc1MzIzMDk5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      name: "Hadiza Abubakar",
+      role: "Rice Farmer - Kano",
+      text: "Their expertise in modern farming techniques helped me reduce losses and increase profitability significantly. My farm is now a model in our community.",
+      image: "https://images.unsplash.com/photo-1659437246862-233d9e3c56e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwyfHxBZnJpY2FuJTIwd29tYW4lMjBwcm9mZXNzaW9uYWwlMjBmYXJtZXIlMjBzbWlsaW5nJTIwY29uZmlkZW50JTIwcG9ydHJhaXR8ZW58MXx8fHwxNzc5MDIyMzk1fDA&ixlib=rb-4.1.0&q=80&w=1080",
     },
   ];
 
@@ -114,8 +121,8 @@ export default function Home() {
       <section className="relative min-h-[90vh] flex items-center bg-gradient-to-br from-green-950 via-green-900 to-green-800">
         <div className="absolute inset-0">
           <ImageWithFallback
-            src="https://images.unsplash.com/photo-1761839257144-297ce252742e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBhZ3JpY3VsdHVyZSUyMGZhcm1pbmclMjB0ZWNobm9sb2d5fGVufDF8fHx8MTc3NTMyMjMwOXww&ixlib=rb-4.1.0&q=80&w=1080"
-            alt="Modern agriculture"
+            src={heroImage}
+            alt="Modern irrigation system on lush green farmland"
             className="w-full h-full object-cover opacity-20"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-green-900/90 to-green-800/70"></div>
@@ -238,8 +245,8 @@ export default function Home() {
             <div className="relative">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1708975477074-71e2907b699f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZ3JpY3VsdHVyYWwlMjBtYWNoaW5lcnklMjB0cmFjdG9yfGVufDF8fHx8MTc3NTMyMzA5OHww&ixlib=rb-4.1.0&q=80&w=1080"
-                  alt="Modern farming equipment"
+                  src={aboutImage}
+                  alt="Professional African farmer with technology"
                   className="w-full h-[500px] object-cover"
                 />
               </div>
@@ -368,10 +375,10 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { name: "Rice", image: "https://images.unsplash.com/photo-1651981350249-6173caeeb660?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyaWNlJTIwZmFybWluZyUyMHBhZGR5JTIwZmllbGR8ZW58MXx8fHwxNzc1MzIzMDk2fDA&ixlib=rb-4.1.0&q=80&w=1080" },
-              { name: "Maize", image: "https://images.unsplash.com/photo-1674653495530-11c685a09416?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYWl6ZSUyMGNvcm4lMjBmYXJtaW5nJTIwaGFydmVzdHxlbnwxfHx8fDE3NzUzMjMwOTZ8MA&ixlib=rb-4.1.0&q=80&w=1080" },
-              { name: "Vegetables", image: "https://images.unsplash.com/photo-1696595999196-15a33d311355?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx2ZWdldGFibGUlMjBmYXJtaW5nJTIwZ2FyZGVufGVufDF8fHx8MTc3NTMyMzA5N3ww&ixlib=rb-4.1.0&q=80&w=1080" },
-              { name: "Poultry", image: "https://images.unsplash.com/photo-1772337196364-9d84fd2794f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGlja2VuJTIwcG91bHRyeSUyMGZhcm1pbmd8ZW58MXx8fHwxNzc1MzIzMDk3fDA&ixlib=rb-4.1.0&q=80&w=1080" },
+              { name: "Rice", image: "https://images.unsplash.com/photo-1621394988863-117a9fc6e77f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwyfHxncmVlbiUyMHJpY2UlMjBmaWVsZCUyMHBhZGR5JTIwbHVzaCUyMHZpYnJhbnQlMjBtb2Rlcm58ZW58MXx8fHwxNzc5MDIxNjAzfDA&ixlib=rb-4.1.0&q=80&w=1080" },
+              { name: "Maize", image: maizeProductImage },
+              { name: "Vegetables", image: vegetablesProductImage },
+              { name: "Livestock", image: "https://images.unsplash.com/photo-1608671071793-db93efcf33df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxBZnJpY2FuJTIwY2F0dGxlJTIwY293cyUyMGxpdmVzdG9jayUyMGhlYWx0aHklMjBmYXJtfGVufDF8fHx8MTc3OTAyMTY5MHww&ixlib=rb-4.1.0&q=80&w=1080" },
             ].map((product, index) => (
               <div key={index} className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all">
                 <ImageWithFallback

@@ -3,6 +3,8 @@ import { Button } from "../components/ui/button";
 import { Input } from "../components/ui/input";
 import { Textarea } from "../components/ui/textarea";
 import { useState } from "react";
+import { ImageWithFallback } from "../components/figma/ImageWithFallback";
+import heroImage from "../../imports/image-5.png";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -46,8 +48,15 @@ export default function Contact() {
   return (
     <div className="overflow-x-hidden">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-green-900 to-green-800 text-white py-24">
-        <div className="container mx-auto px-4">
+      <section className="relative bg-gradient-to-br from-green-900 to-green-800 text-white py-24">
+        <div className="absolute inset-0 opacity-20">
+          <ImageWithFallback
+            src={heroImage}
+            alt="Contact Dagona Farms"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl mb-6">Contact Us</h1>
             <p className="text-xl md:text-2xl text-green-100 leading-relaxed">

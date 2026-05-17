@@ -2,6 +2,8 @@ import { GraduationCap, Users, DollarSign, Tractor, TrendingUp, FileText, Sprout
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import { Link } from "react-router";
 import { Button } from "../components/ui/button";
+import gapTrainingImage from "../../imports/image-2.png";
+import heroImage from "../../imports/image-5.png";
 
 export default function Services() {
   const mainServices = [
@@ -10,7 +12,7 @@ export default function Services() {
       title: "Good Agricultural Practices Training",
       shortTitle: "GAP Training",
       description: "Comprehensive training programs that empower farmers with modern agricultural knowledge and practical skills.",
-      image: "https://images.unsplash.com/photo-1600150806193-cf869bcfee05?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZ3JpY3VsdHVyYWwlMjB0cmFpbmluZyUyMGZhcm1lcnN8ZW58MXx8fHwxNzc1MzIyMzA5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      image: gapTrainingImage,
       features: [
         "Soil fertility management",
         "Seed selection & planting",
@@ -26,7 +28,7 @@ export default function Services() {
       title: "Extension Services",
       shortTitle: "Technical Support",
       description: "Continuous technical backstopping and advisory services throughout the farming season.",
-      image: "https://images.unsplash.com/photo-1758390285798-59b0d7d46371?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZ3JpY3VsdHVyYWwlMjBjb21tdW5pdHklMjB0ZWFtd29ya3xlbnwxfHx8fDE3NzUzMjIzMTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      image: "https://images.unsplash.com/photo-1605000797499-95a51c5269ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxBZnJpY2FuJTIwZmFybWVycyUyMHdvcmtpbmclMjB0b2dldGhlciUyMGZpZWxkJTIwdGVhbSUyMGNvbGxhYm9yYXRpb24lMjBoYXJ2ZXN0fGVufDF8fHx8MTc3OTAyMjQ2OXww&ixlib=rb-4.1.0&q=80&w=1080",
       features: [
         "Seasonal crop planning",
         "On-farm visits & support",
@@ -42,7 +44,7 @@ export default function Services() {
       title: "Farm Management Services",
       shortTitle: "Farm Management",
       description: "End-to-end professional farm management for commercial operations and investors.",
-      image: "https://images.unsplash.com/photo-1708975477074-71e2907b699f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZ3JpY3VsdHVyYWwlMjBtYWNoaW5lcnklMjB0cmFjdG9yfGVufDF8fHx8MTc3NTMyMzA5OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      image: "https://images.unsplash.com/photo-1606739211185-2c846d734a6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBmYXJtJTIwdHJhY3RvciUyMGVxdWlwbWVudCUyMGFncmljdWx0dXJlJTIwbWFjaGluZXJ5fGVufDF8fHx8MTc3OTAyMTc2N3ww&ixlib=rb-4.1.0&q=80&w=1080",
       features: [
         "Feasibility assessment",
         "Farm design & layout",
@@ -58,7 +60,7 @@ export default function Services() {
       title: "Market Linkages",
       shortTitle: "Market Access",
       description: "Direct connections to reliable buyers, processors, and export markets.",
-      image: "https://images.unsplash.com/photo-1765260905999-06612390fb07?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZnJpY2FuJTIwZmFybSUyMGZpZWxkJTIwY3JvcHN8ZW58MXx8fHwxNzc1MzIyMzA5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      image: "https://images.unsplash.com/photo-1579113800032-c38bd7635818?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmcmVzaCUyMHZlZ2V0YWJsZXMlMjBoYXJ2ZXN0JTIwY29sb3JmdWwlMjB2aWJyYW50JTIwZmFybXxlbnwxfHx8fDE3NzkwMjE2MDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
       features: [
         "Market intelligence",
         "Contract farming schemes",
@@ -120,8 +122,12 @@ export default function Services() {
     <div className="overflow-x-hidden">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-green-900 via-green-800 to-green-900 text-white py-32">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0" style={{ backgroundImage: "url('data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')" }}></div>
+        <div className="absolute inset-0 opacity-20">
+          <ImageWithFallback
+            src={heroImage}
+            alt="Agricultural services"
+            className="w-full h-full object-cover"
+          />
         </div>
         <div className="container mx-auto px-4 relative z-10 text-center">
           <div className="inline-block bg-green-700/50 backdrop-blur-sm px-4 py-2 rounded-full mb-6">

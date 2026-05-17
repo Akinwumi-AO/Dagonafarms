@@ -1,5 +1,8 @@
 import { Wheat, Fish, Beef, Apple, Factory, TrendingUp, Droplet, Sun, ShieldCheck } from "lucide-react";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
+import livestockImage from "../../imports/image-3.png";
+import aquacultureImage from "../../imports/image-4.png";
+import heroImage from "../../imports/image-5.png";
 
 export default function Products() {
   const farmingSectors = [
@@ -7,7 +10,7 @@ export default function Products() {
       title: "Crop Production",
       subtitle: "Sustainable & High-Yield Farming",
       description: "Modern cultivation of staple crops including rice, maize, vegetables, and legumes using advanced agricultural techniques and sustainable practices.",
-      image: "https://images.unsplash.com/photo-1651981350249-6173caeeb660?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyaWNlJTIwZmFybWluZyUyMHBhZGR5JTIwZmllbGR8ZW58MXx8fHwxNzc1MzIzMDk2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      image: "https://images.unsplash.com/photo-1602989106211-81de671c23a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyaWNlJTIwZmllbGQlMjBwYWRkeSUyMGNyb3AlMjBmYXJtaW5nfGVufDF8fHx8MTc3OTAyMDgyOXww&ixlib=rb-4.1.0&q=80&w=1080",
       icon: Wheat,
       color: "from-green-600 to-green-700",
       products: [
@@ -21,7 +24,7 @@ export default function Products() {
       title: "Livestock Farming",
       subtitle: "Quality Animal Products",
       description: "Professional livestock management including cattle, poultry, and small ruminants with modern herd management practices and quality feed programs.",
-      image: "https://images.unsplash.com/photo-1645749402055-8e9d6b70e952?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsaXZlc3RvY2slMjBjYXR0bGUlMjBmYXJtaW5nfGVufDF8fHx8MTc3NTIyMzUzMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      image: livestockImage,
       icon: Beef,
       color: "from-amber-600 to-amber-700",
       products: [
@@ -35,7 +38,7 @@ export default function Products() {
       title: "Aquaculture",
       subtitle: "Sustainable Fish Farming",
       description: "Modern fish farming operations with controlled pond environments, quality feed management, and sustainable aquaculture practices.",
-      image: "https://images.unsplash.com/photo-1645692396914-4ca9df38cce3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmaXNoJTIwZmFybWluZyUyMGFxdWFjdWx0dXJlJTIwcG9uZHxlbnwxfHx8fDE3NzUzMjMwOTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      image: aquacultureImage,
       icon: Fish,
       color: "from-blue-600 to-blue-700",
       products: [
@@ -94,8 +97,8 @@ export default function Products() {
       <section className="relative bg-gradient-to-br from-green-900 to-green-800 text-white py-32">
         <div className="absolute inset-0 opacity-20">
           <ImageWithFallback
-            src="https://images.unsplash.com/photo-1665315302321-46989ca7829a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmYXJtJTIwZnJlc2glMjB2ZWdldGFibGVzJTIwcHJvZHVjZXxlbnwxfHx8fDE3NzUzMjMwOTl8MA&ixlib=rb-4.1.0&q=80&w=1080"
-            alt="Fresh produce"
+            src={heroImage}
+            alt="Premium fresh vegetables produce"
             className="w-full h-full object-cover"
           />
         </div>
